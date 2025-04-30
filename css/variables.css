@@ -9,6 +9,7 @@
     --font-size-xl: 1.5rem;      /* 24px */
     --font-size-xxm: 2.5rem;     /* 40px */
     --font-size-xxl: 3.125rem;   /* 50px */
+    --font-size-xxxm: 3.375rem;  /* 54px */
     --font-size-xxxl: 5rem;      /* 80px */
     
 
@@ -16,6 +17,7 @@
 		--dire-wolf: #282829;
 		--orion-gray: #55565a;
 		--old-map: #d5c9be;
+    --silver-medal: #D6D6D6;
 		--white: #fff;
 
 		--restless-sea: #38535d;
