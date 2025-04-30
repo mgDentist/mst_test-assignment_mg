@@ -1,14 +1,17 @@
 html, body {
   height: 100%;
   font-size: 16px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
 }
 
 body {
+  position: relative;
+  max-width: 2560px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   background-color: var(--dire-wolf);
 }
 
@@ -18,7 +21,7 @@ main {
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 2560px;
   margin: 0 auto;
   padding: 0 162px;
 }
