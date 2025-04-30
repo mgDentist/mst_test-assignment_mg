@@ -5,36 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>MST</title>
-    
+
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    
+
     <link rel="preload" href="fonts/Prata-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Prata-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="css/styles.css">
 
     <script defer src="js/script.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a class="header__logo">
+                <!-- *аттрибут href удален, тк мы на главной странице и она не должна обновляться если кликать по лого тут (на других страницах href будет) -->
+                <img src="images/logo.svg" alt="MST logo" width="154" height="29">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Our Works
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 
     <main>
+        <h1>main
+
+        </h1>
 
     </main>
 
     <footer>
-    
+
     </footer>
-    
+
 </body>
 
 </html>
