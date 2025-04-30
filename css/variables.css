@@ -16,6 +16,9 @@
 
 		--restless-sea: #38535d;
 
+    --font-family: 'Arial', sans-serif;
+    --font-family-additive: 'Prata', sans-serif;
+
     --transparent: transparent;
 
     --transition: all 0.3s ease-in-out;

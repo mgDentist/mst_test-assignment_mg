@@ -1,0 +1,130 @@
+.footer {
+		padding-bottom: 53px;
+    background-color: var(--black-out);
+}
+
+.footer__container {
+    padding: 0 0;
+}
+.footer__nav-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 38px 0 40px;
+		border-top: 2px solid var(--old-map);
+		border-bottom: 2px solid var(--old-map);
+}
+.footer__nav {
+    
+}
+.footer__nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.footer__nav-item {
+}
+.footer__nav-link {
+	position: relative;
+  font-family: var(--font-family);
+  font-style: italic;
+  font-size: var(--font-size-l);
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+	transition: var(--transition);
+}
+
+.footer__nav-link::after {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 1px;
+	background-color: var(--white);
+	bottom: -7px;
+	transition: var(--transition);
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.footer__nav-link:hover::after {
+	width: 100%;
+}
+
+.footer__nav-link:focus::after {
+	width: 100%;
+}
+
+.footer__nav-link:active {
+	opacity: 0.5;
+}
+
+.footer__nav-link:active::after {
+	opacity: 0.5;
+}
+
+.footer__cotacts-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 43px 183px 38px 160px;
+}
+.footer__logo {
+}
+.footer__logo-img {
+}
+.footer__socials-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+}
+.footer__socials-item {
+}
+.footer__socials-link {
+}
+.footer__socials-link-img {
+}
+.footer__button {
+	padding: 23px 52px;
+	font-style: italic;
+	font-size: var(--font-size-l);
+	line-height: 150%;
+	letter-spacing: 0.04em;
+}
+.footer__copyright-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 183px 0 160px;
+
+	font-size: var(--font-size-l);
+	line-height: 150%;
+	color: var(--old-map);
+}
+.footer__copyright-text {
+	color: var(--white);
+}
+.footer__privacy-policy {
+
+}
+.footer__terms-of-use {
+}
+
+.footer__socials-link {
+    color: var(--old-map);
+    transition: var(--transition);
+}
+
+.footer__socials-link:hover {
+    color: var(--white);
+}
+
+.footer__socials-link-img {
+    transition: var(--transition);
+}
+.footer__socials-link:hover .footer__socials-link-img {
+    filter: brightness(1.5); 
+}

@@ -20,6 +20,32 @@ main {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  padding: 0 162px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  color: var(--black-out);
+  text-transform: uppercase;
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--black-out);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.button:active {
+  opacity: 0.5;
 }
 
 .visually-hidden {
