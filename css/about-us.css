@@ -1,0 +1,79 @@
+.about-us {
+    padding: 100px 0 0;
+    background-color: var(--dire-wolf);
+}
+
+.about-us__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.about-us__image-wrapper {
+    flex-shrink: 0;
+}
+.about-us__image-wrapper img {
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.about-us__content-wrapper {
+    /* max-width: 614px; */
+		display: flex	;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 100%;
+    padding: 53px 53px 0;
+}
+.about-us__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+.about-us__item {
+    position: relative;
+    padding: 0 0 0 78px;
+}
+
+.about-us__item:not(:last-child) {
+    padding-bottom: 40px;
+}
+
+.about-us__item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--orion-gray);
+}
+
+.about-us__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58px;
+    height: 47px;
+    background-image: url('../images/svg/list-dot.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-us__item-text {
+  font-size: var(--font-size-xl);
+  color: var(--white);
+  /* line-height: 140%; в макете 140%, но подходит 106% */
+  line-height: 106%;
+}
+
+.about-us__button {
+  width: 100%;
+  padding: 32px 52px;
+  font-weight: 700;
+  font-size: var(--font-size-l);
+  line-height: 150%;
+  letter-spacing: 0.04em;
+}
