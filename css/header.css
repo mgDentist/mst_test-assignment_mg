@@ -13,7 +13,6 @@
   background-color: var(--black-out);
 }
 
-/* Стиль для открытого меню */
 .header.menu-open {
   background-color: var(--black-out);
 }
@@ -27,8 +26,8 @@
 }
 
 .header__logo {
-    flex-shrink: 0;
-    z-index: 10;
+  flex-shrink: 0;
+  z-index: 10;
 }
 
 .header__nav {
@@ -38,9 +37,6 @@
 .header__nav-list {
 	display: flex;
 	gap: 29px;
-}
-
-.header__nav-item {
 }
 
 .header__nav-link {

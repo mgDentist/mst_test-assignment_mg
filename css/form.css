@@ -3,10 +3,6 @@
     background-color: var(--dire-wolf);
 }
 
-.form__container {
-    
-}
-
 .form__wrapper {
 	position: relative;
 	display: flex;
@@ -39,10 +35,6 @@
 	flex-direction: column;
 	gap: 13px;
 	margin-bottom: 26px;
-}
-
-.form__label {
-
 }
 
 .form__input {
@@ -112,9 +104,6 @@
 
 .form__input:-ms-input-placeholder {
 	color: var(--orion-gray);
-}
-
-.form__link {
 }
 
 .form__button {
