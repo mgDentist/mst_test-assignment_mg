@@ -104,3 +104,44 @@
 		padding: 20px 40px;
   }
 }
+
+@media (max-width: 1023px) {
+  .about-us {
+    padding: 50px 0 50px;
+  }
+
+	.about-us__content-wrapper {
+    padding: 15px 15px 0;
+	}
+
+	.about-us__item-text {
+		font-size: var(--font-size-base);
+	}
+
+	    .about-us__item::before {
+        width: 25px;
+        height: 20px;
+    }
+
+		.about-us__item {
+    padding: 0 0 0 36px;
+		}
+
+		.about-us__item:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.about-us__list {
+		gap: 20px;
+	}
+
+	    .about-us__button {
+        padding: 10px 30px;
+				font-size: var(--font-size-base);
+    }
+
+		.about-us__image-wrapper img {
+			height: 100%;
+			object-fit: cover;
+		}
+}
