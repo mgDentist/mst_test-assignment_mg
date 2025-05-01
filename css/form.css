@@ -1,5 +1,5 @@
 .form {
-    padding: 100px 0;
+    padding: 100px 0; 
     background-color: var(--dire-wolf);
 }
 
@@ -198,7 +198,7 @@
 
 @media (max-width: 1023px) {
 	.form {
-		padding: 50px 0;
+		padding: 0 0 50px;
 	}
 	
 	.form__image-decoration {
@@ -222,5 +222,48 @@
 		font-size: var(--font-size-l);
     padding: 10px 20px;
   }
-	
+}
+
+@media (max-width: 767px) {
+	.form {
+		padding: 0 0 30px;
+	}
+
+	.form__form {
+		min-width: 100%;
+		padding: 20px;
+	}
+
+	.form__title {
+		font-size: var(--font-size-xl);
+		margin-bottom: 20px;
+	}
+
+	.form__input {
+    padding: 10px 10px;
+  }
+
+	.form__input-wrapper {
+		margin-bottom: 20px;
+	}
+
+	.form__label--checkbox {
+		font-size: var(--font-size-s);
+	}
+
+	.form__label--checkbox::before {
+		width: 20px;
+		height: 20px;
+	}
+
+	.form__input--checkbox:checked + .form__label--checkbox::after  {
+		width: 18px;
+		height: 18px;
+	}
+
+	.form__button {
+		margin-top: 18px;
+		padding: 7px 10px;
+		font-size: var(--font-size-base);
+	}
 }
