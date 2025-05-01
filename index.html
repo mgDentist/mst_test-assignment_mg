@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Join MST Animal Shelter's mission to rescue, rehabilitate, and rehome furry friends. Adopt today and give hope to animals in need.">
 
     <title>MST</title>
 
@@ -25,8 +27,7 @@
 <body>
     <header class="header" id="header">
         <div class="container header__container">
-            <a class="header__logo">
-                <!-- *аттрибут href удален, тк мы на главной странице и она не должна обновляться если кликать по лого тут (на других страницах href будет) -->
+            <a href="#" class="header__logo">
                 <img src="images/logo.svg" alt="MST logo" width="64" height="64">
             </a>
 
@@ -89,20 +90,31 @@
                             </p>
                         </li>
                     </ul>
-                    <button class="button hero__button" type="button" aria-label="order">adopt today</button>
+                    <button class="button hero__button" type="button" aria-label="Adopt a pet">adopt today</button>
                 </div>
                 <div class="hero__image-wrapper">
-                    <img src="images/hero/hero-image.png" alt="animal shelter with dogs and cats inside" width="763"
-                        height="1009">
+                    <!-- Пример ретинизации и оптимизации загрузки изображений | возможно использовать с медиазапросами-->
+                    <picture>
+                        <source srcset="images/hero/hero-image.webp 1x, images/hero/hero-image@2x.webp 2x"
+                            type="image/webp">
+                        <img srcset="images/hero/hero-image.png 1x, images/hero/hero-image@2x.png 2x"
+                            alt="animal shelter with dogs and cats inside" width="763" height="1009" loading="lazy">
+                    </picture>
                 </div>
             </div>
         </section>
         <section class="about-us">
             <div class="container about-us__container">
                 <div class="about-us__image-wrapper">
-                    <img src="images/about-us/about-us-dogs.png"
-                        alt="Three volunteers smiling as they pet and play with dogs in a bright animal shelter playroom"
-                        width="622" height="724">
+                    <h2 class="visually-hidden">About us</h2>
+                    <!-- Пример ретинизации и оптимизации загрузки изображений | возможно использовать с медиазапросами-->
+                    <picture>
+                        <source srcset="images/about-us/about-us-dogs.webp 1x, images/about-us/about-us-dogs@2x.webp 2x"
+                            type="image/webp">
+                        <img srcset="images/about-us/about-us-dogs.png 1x, images/about-us/about-us-dogs@2x.png 2x"
+                            alt="Three volunteers smiling as they pet and play with dogs in a bright animal shelter playroom"
+                            width="622" height="724" loading="lazy">
+                    </picture>
                 </div>
                 <div class="about-us__content-wrapper">
                     <ul class="about-us__list">
@@ -123,12 +135,17 @@
                                 of kindness brings us one paw closer to saving lives</p>
                         </li>
                     </ul>
-                    <button class="button about-us__button" type="button" aria-label="order">adopt today</button>
+                    <button class="button about-us__button" type="button" aria-label="Adopt a pet">adopt today</button>
                 </div>
                 <div class="about-us__image-wrapper">
-                    <img src="images/about-us/about-us-cat.png"
-                        alt="Young woman gently holding a black-and-white cat inside a sunny, well-kept animal shelter"
-                        width="589" height="724">
+                    <!-- Пример ретинизации и оптимизации загрузки изображений | возможно использовать с медиазапросами-->
+                    <picture>
+                        <source srcset="images/about-us/about-us-cat.webp 1x, images/about-us/about-us-cat@2x.webp 2x"
+                            type="image/webp">
+                        <img srcset="images/about-us/about-us-cat.png 1x, images/about-us/about-us-cat@2x.png 2x"
+                            alt="Young woman gently holding a black-and-white cat inside a sunny, well-kept animal shelter"
+                            width="589" height="724">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -150,13 +167,14 @@
                         <label for="agreement" class="form__label form__label--checkbox">
                             I accept Privacy policy
                         </label>
-                        <button class="button form__button" type="submit" aria-label="order">Submit an
+                        <button class="button form__button" type="submit" aria-label="Submit an application">Submit an
                             application</button>
                     </form>
                     <div class="form__image-wrapper">
-                        <img src="images/form/shelter-outside.png" alt="dog and cat" width="600" height="628">
-                        <img class="form__image-decoration" src="images/form/home-home.png" alt="dog and cat"
-                            width="210" height="750">
+                        <img src="images/form/shelter-outside.png" alt="shelter outside" width="600" height="628"
+                            loading="lazy">
+                        <img class="form__image-decoration" src="images/form/home-home.png" alt="home signpost"
+                            width="210" height="750" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -187,8 +205,7 @@
                 </nav>
             </div>
             <div class="footer__cotacts-wrapper">
-                <a class="footer__logo">
-                    <!-- *аттрибут href удален, тк мы на главной странице и она не должна обновляться если кликать по лого тут (на других страницах href будет) -->
+                <a href="#" class="footer__logo">
                     <img class="footer__logo-img" src="images/logo.svg" alt="MST logo" width="64" height="64">
                 </a>
 
@@ -230,7 +247,7 @@
                         </a>
                     </li>
                 </ul>
-                <button class="button footer__button" type="button" aria-label="order">adopt</button>
+                <button class="button footer__button" type="button" aria-label="Adopt a pet">adopt</button>
             </div>
             <div class="footer__copyright-wrapper">
                 <p class="footer__copyright-text">© 2024, Copyright.</p>
