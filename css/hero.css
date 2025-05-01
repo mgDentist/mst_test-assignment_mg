@@ -87,6 +87,7 @@
 @media (max-width: 1919px) {
   .hero__container {
     display: flex;
+		justify-content: space-between;
 		column-gap: 120px;
 		row-gap: 50px;
 		padding-right: 0;

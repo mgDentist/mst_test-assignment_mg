@@ -4,12 +4,17 @@
   top: 0;
   left: 0;
 	padding: 44px 0;
-  background-color: var(--dire-wolf);
+  background-color: var(--transparent);
   transition: var(--transition);
   z-index: 100;
 }
 
 #header.scrolled {
+  background-color: var(--black-out);
+}
+
+/* Стиль для открытого меню */
+.header.menu-open {
   background-color: var(--black-out);
 }
 
@@ -24,6 +29,7 @@
 
 .header__logo {
     flex-shrink: 0;
+    z-index: 10;
 }
 
 .header__nav {
@@ -77,8 +83,111 @@
 	opacity: 0.5;
 }
 
+.header__burger-button {
+	display: none;
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  transition: var(--transition);
+}
+
+.header__burger-button:hover {
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+
+.header__burger-button-icon {
+	display: none;
+  transition: var(--transition);
+  width: 45px;
+  height: 45px;
+  filter: invert(1);
+}
+
+.header__burger-button svg {
+  stroke: var(--white);
+}
+
+.header__burger-button-icon[alt="burger"] {
+  display: block;
+}
+
+.header__burger-button-icon[alt="close"] {
+  display: none;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.header.menu-open .header__burger-button-icon[alt="burger"] {
+  display: none;
+}
+
+.header.menu-open .header__burger-button-icon[alt="close"] {
+  display: block;
+}
+
+.header.menu-open .header__burger-button-icon {
+	stroke: var(--white);
+}
+
 @media (max-width: 1919px) {
 	.header {
 		padding: 40px 0;
 	}
+}
+
+@media (max-width: 1023px) {
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--black-out);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: var(--transition);
+    z-index: 5;
+  }
+  
+  .header__nav-list {
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .header__nav-item {
+    margin-bottom: 20px;
+  }
+  
+  .header__nav-link {
+    font-size: var(--font-size-xl);
+  }
+  
+  .header.menu-open .header__nav {
+    height: 100vh;
+  }
+  
+  .header.menu-open .header__nav-list {
+    opacity: 1;
+  }
+  
+  body.no-scroll {
+    overflow: hidden;
+  }
+  
+  .header__burger-button {
+    display: flex;
+		justify-content: center;
+		align-items: center;
+  }
 }
