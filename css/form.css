@@ -10,16 +10,20 @@
 .form__wrapper {
 	position: relative;
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: nowrap;
-    background-color: var(--white);
-    border-radius: 30px;
-    border: 2px solid var(--old-map);
+  background-color: var(--white);
+  border-radius: 30px;
+  border: 2px solid var(--old-map);
 }
+
 .form__form {
 	width: 100%;
+	max-width: 1000px;
   position: relative;
-  padding: 72.5px 682px 71.5px 134px;
+  padding: 72px 10px 71px 134px;
 }
+
 .form__title {
 	max-width: 400px;
 	margin-bottom: 45px;
@@ -28,18 +32,16 @@
   line-height: 110%;
   color: var(--restless-sea);
 }
+
 .form__input-wrapper {
 	display: flex;
 	flex-direction: column;
 	gap: 13px;
 	margin-bottom: 26px;
 }
+
 .form__label {
 
-}
-
-.form__label--checkbox {
-	margin-bottom: 26px;
 }
 
 .form__input {
@@ -50,12 +52,52 @@
 }
 
 .form__input--checkbox {
-	width: auto;
+display: none;
+}
+
+.form__label--checkbox {
+ padding-left: 40px;
+ margin-bottom: 26px;
+ position: relative;
+ cursor: pointer;
+}
+
+.form__label--checkbox::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 24px;
+	height: 24px;
+	border: 2px solid var(--hypothalamus-grey);
+	border-radius: 4px;
+	background-color: var(--white);
+	transition: var(--transition);
+}
+
+.form__label--checkbox:hover::before {
+	box-shadow: 0 0 5px var(--restless-sea);
+}
+
+.form__input--checkbox:checked + .form__label--checkbox::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 24px;
+	height: 24px;
+	background-image: url(../images/svg/checkbox-tick.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .form__input::placeholder {
 	color: var(--orion-gray);
 	font-size: var(--font-size-xl);
+	opacity: 0.7;
 }
 
 .form__input::-webkit-input-placeholder {
@@ -71,8 +113,6 @@
 	color: var(--orion-gray);
 }
 
-.form__input-checkbox {
-}
 .form__link {
 }
 
@@ -81,7 +121,7 @@
 	padding: 32px 20px;
 	margin-top: 26px;
 	font-size: var(--font-size-xl);
-line-height: 150%;
+	line-height: 150%;
 	color: var(--white);
 	border: 1px solid var(--dire-wolf);
 	background-color: var(--dire-wolf);
@@ -98,7 +138,17 @@ line-height: 150%;
 }
 
 .form__image-wrapper {
+	position: relative;
+	flex-shrink: 0;
+}
+
+.form__image-decoration {
 	position: absolute;
-	right: 0;
-	top: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.form__input--checkbox:invalid + .form__label--checkbox::before {
+	border-color: red;
+	box-shadow: 0 0 5px red;
 }
