@@ -1,33 +1,29 @@
 :root {
-    --mobile-width: 320px;
-    --tablet-width: 768px;
-    --desktop-width: 1280px;
+  --mobile-width: 320px;
+  --tablet-width: 768px;
+  --desktop-width: 1280px;
 
-    --font-size-base: 1rem;      /* 16px */
-    --font-size-s: 0.875rem;     /* 14px */
-    --font-size-l: 1.25rem;      /* 20px */
-    --font-size-xl: 1.5rem;      /* 24px */
-    --font-size-xxm: 2.5rem;     /* 40px */
-    --font-size-xxl: 3.125rem;   /* 50px */
-    --font-size-xxxm: 3.375rem;  /* 54px */
-    --font-size-xxxl: 5rem;      /* 80px */
-    
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-s: 0.875rem;     /* 14px */
+  --font-size-l: 1.25rem;      /* 20px */
+  --font-size-xl: 1.5rem;      /* 24px */
+  --font-size-xxm: 2.5rem;     /* 40px */
+  --font-size-xxl: 3.125rem;   /* 50px */
+  --font-size-xxxm: 3.375rem;  /* 54px */
+  --font-size-xxxl: 5rem;      /* 80px */
+  
+  --font-family: 'Arial', sans-serif;
+  --font-family-additive: 'Prata', serif;
 
-		--black-out: #222;
-		--dire-wolf: #282829;
-		--orion-gray: #55565a;
-		--old-map: #d5c9be;
-    --silver-medal: #D6D6D6;
-		--white: #fff;
+	--black-out: #222222;
+	--dire-wolf: #282829;
+	--orion-gray: #55565a;
+	--old-map: #d5c9be;
+  --silver-medal: #D6D6D6;
+	--white: #fff;
+	--restless-sea: #38535d;
+  --hypothalamus-grey: #405d65;
+  --transparent: transparent;
 
-		--restless-sea: #38535d;
-    --hypothalamus-grey: #405d65;
-
-    --font-family: 'Arial', sans-serif;
-    --font-family-additive: 'Prata', serif;
-
-    --transparent: transparent;
-
-    --transition: all 0.3s ease-in-out;
+  --transition: all 0.3s ease-in-out;
 }
-

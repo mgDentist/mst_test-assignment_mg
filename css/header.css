@@ -4,8 +4,9 @@
   top: 0;
   left: 0;
 	padding: 44px 0;
-  background-color: var(--transparent);
+  background-color: var(--dire-wolf);
   transition: var(--transition);
+  z-index: 100;
 }
 
 #header.scrolled {
@@ -13,22 +14,27 @@
 }
 
 .header__container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 0 974px 0 163px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 205px;
+  padding: 0 163px 0;
 }
+
 .header__logo {
     flex-shrink: 0;
 }
+
 .header__nav {
+	margin-right: auto;
 }
+
 .header__nav-list {
 	display: flex;
 	gap: 29px;
 }
+
 .header__nav-item {
 }
 

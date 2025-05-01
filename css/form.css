@@ -20,6 +20,7 @@
 .form__form {
 	width: 100%;
 	max-width: 1000px;
+	min-height: 549px;
   position: relative;
   padding: 72px 10px 71px 134px;
 }
@@ -52,14 +53,14 @@
 }
 
 .form__input--checkbox {
-display: none;
+	display: none;
 }
 
 .form__label--checkbox {
- padding-left: 40px;
- margin-bottom: 26px;
- position: relative;
- cursor: pointer;
+  padding-left: 40px;
+	margin-bottom: 26px;
+	position: relative;
+	cursor: pointer;
 }
 
 .form__label--checkbox::before {
@@ -118,7 +119,7 @@ display: none;
 
 .form__button {
 	width: 100%;
-	padding: 32px 20px;
+	padding: 31px 20px;
 	margin-top: 26px;
 	font-size: var(--font-size-xl);
 	line-height: 150%;
@@ -144,8 +145,8 @@ display: none;
 
 .form__image-decoration {
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	top: -110px;
+	right: 0;
 }
 
 .form__input--checkbox:invalid + .form__label--checkbox::before {
