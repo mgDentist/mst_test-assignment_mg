@@ -77,3 +77,30 @@
   line-height: 150%;
   letter-spacing: 0.04em;
 }
+
+@media (max-width: 1919px) {
+  .about-us__image-wrapper {
+    flex-shrink: 1;
+  }
+
+  .about-us__item-text {
+    font-size: var(--font-size-xl);
+  }
+
+  .about-us__item::before {
+    width: 48px;
+    height: 37px;
+  }
+
+  .about-us__content-wrapper {
+    padding: 30px 30px 0;
+  }
+
+  .about-us__list {
+    margin-bottom: 60px;
+  }
+
+  .about-us__button {
+		padding: 20px 40px;
+  }
+}

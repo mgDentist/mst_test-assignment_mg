@@ -153,3 +153,9 @@
 .footer__socials-link:hover .footer__socials-link-img {
     filter: brightness(1.5); 
 }
+
+@media (max-width: 1919px) {
+	.footer__button {
+		padding: 15px 40px;
+	}
+}

@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 205px;
-  padding: 0 163px 0;
+  /* padding: 0 163px 0; */
 }
 
 .header__logo {
@@ -77,6 +77,8 @@
 	opacity: 0.5;
 }
 
-@media (min-width: var(--desktop-width)) {
-  
+@media (max-width: 1919px) {
+	.header {
+		padding: 40px 0;
+	}
 }
